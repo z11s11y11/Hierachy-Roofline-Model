@@ -22,7 +22,9 @@ ERT（Empirical Roofline Toolkit） 是一个基于 MPI、OpenMP 和 CUDA 的开
 下载方法 git clone https://bitbucket.org/berkeleylab/cs-roofline-toolkit.git
 已经下载到了Hierachy-Roofline-Model\cs-roofline-toolkit中
 
-@todo agent你需要将这个代码文件运行起来，获得Nvidia A6000GPU的roofline模型，并将运行的脚本写入Hierachy-Roofline-Model\run_ERT.md中，比如说我在A6000的环境上跑，应该能得到A6000的硬件参数，将硬件参数保存在resluts\A6000.md中，如果型号是H100，则保存到resluts\H100.md中，以此类推
+@todo agent你需要将这个代码文件运行起来，获得Nvidia A6000GPU的roofline模型，并将运行的脚本写入Hierachy-Roofline-Model\run_ERT.md中，比如说我在A6000的环境上跑，应该能得到A6000的硬件参数，将硬件参数保存在resluts\A6000.md中，如果型号是H100，则保存到resluts\H100.md中，以此类推。
+
+@todo agent,你需要修改一些代码。在峰值算力方面，原版主要基于 FP64 内核，若要支持其他精度，需要修改 Kernel/ 中的计算类型与 CUDA 内核实现。现在FP64 内核精度的算力不需要测试，需要FP32精度和使用了Tensor Core能达到的峰值算力。
 
 # 第二步：算子测试
 
@@ -37,6 +39,8 @@ https://github.com/z11s11y11/FP16_GEMM_TensorCore.git这是需要测试的GPU �
 https://github.com/cyanguwa/nersc-roofline 里面的画图方法，相关代码已经下载到本地，目录为Hierachy-Roofline-Model\nersc-roofline，可以修改一些代码
 
 @todo agent你需要稍微修改一下这个代码，画出roofline model的图片，将第二步和第一步得到的结果都画出来，图片保存在Hierachy-Roofline-Model\resluts中
+
+@todo agent，在第一步中我们通过微机准测试测得了FP32和Tensor Core算力，以及HBM和L1,L2缓存的带宽，通过阅读白皮书，我们是可以知道A6000上的理论FP32和Tensor Core算力，以及HBM带宽的，在画出来的图片中也需要体现出理论的数值（如用虚线表示）
 
 # 提醒
 如果是第一次下载git，需要用Remove-Item -Recurse -Force将git删除，再上传github
