@@ -1,0 +1,9 @@
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 2722251 (/home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate)
+{"mode":"DRAM","working_set_bytes":100663296,"repeats":8,"logical_bytes":805306368,"flops":0,"event_ms":2011.84509,"validation":"PASS"}
+==PROF== Disconnected from process 2722251
+"ID","Process ID","Process Name","Host Name","Kernel Name","Context","Stream","Block Size","Grid Size","Device","CC","Section Name","Metric Name","Metric Unit","Metric Value"
+"0","2722251","calibrate","127.0.0.1","void read_bandwidth<0>(const float4 *, float4 *, unsigned long, int)","1","7","(256, 1, 1)","(336, 1, 1)","0","8.6","Command line profiler metrics","dram__bytes.sum","byte","808480128"
+"0","2722251","calibrate","127.0.0.1","void read_bandwidth<0>(const float4 *, float4 *, unsigned long, int)","1","7","(256, 1, 1)","(336, 1, 1)","0","8.6","Command line profiler metrics","gpu__time_duration.sum","ns","1140128"
+"0","2722251","calibrate","127.0.0.1","void read_bandwidth<0>(const float4 *, float4 *, unsigned long, int)","1","7","(256, 1, 1)","(336, 1, 1)","0","8.6","Command line profiler metrics","l1tex__t_sectors.sum","sector","25208832"
+"0","2722251","calibrate","127.0.0.1","void read_bandwidth<0>(const float4 *, float4 *, unsigned long, int)","1","7","(256, 1, 1)","(336, 1, 1)","0","8.6","Command line profiler metrics","lts__t_sectors.sum","sector","25218644"

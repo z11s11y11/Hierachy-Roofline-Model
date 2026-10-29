@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v2",
+    "3072",
+    "3072",
+    "3072",
+    "3",
+    "10"
+  ],
+  "cwd": "/home/zhangshuyi/Hierachy-Roofline-Model",
+  "CUDA_VISIBLE_DEVICES": "4",
+  "TMPDIR": "/home/zhangshuyi/Hierachy-Roofline-Model/.cache/ncu-tmp",
+  "timestamp": "2026-10-29T11:40:55.678025+00:00"
+}

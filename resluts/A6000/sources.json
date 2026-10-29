@@ -1,0 +1,102 @@
+{
+  "FP16_GEMM_TensorCore": {
+    "sha256": {
+      "FP16_GEMM_TensorCore_test.cuh": "f5b8dbf744a3c90f013a2ce76c07664dd2b9a202d3baca1559a4f0a1eb3b9dc2",
+      "cublas/FP16_GEMM_TensorCore.cu": "2de7ae123bffb8253db76ae29bad782dc7dc069ddb7f4312a4364b01eaf2814b",
+      "cublas/FP16_GEMM_TensorCore_test.cu": "197b2e9640a774663791bf03e24931daf2c0608db4a1cccac9645956e1aecaa0",
+      "cublas/mlsys_profile/FP16_GEMM_TensorCore_profile_once.cu": "efe68a522ee0bce09ccebf82798ad6514e9a2e63f2c4edeab3b2428612c518f4",
+      "cutlass/FP16_GEMM_TensorCore.cu": "dc7ba040d672b485dce483c2cc03a91b33f117560adb107409aeead22d82e829",
+      "cutlass/FP16_GEMM_TensorCore_test.cu": "ac7df09a9eb82624994d26836b3abe343afa2cb529d3882b5915018aaa32e25b",
+      "v1/FP16_GEMM_TensorCore.cu": "6055041f1f429f303b4a3ba25fdd8e17cad81a802b81810f444fc39b258f3704",
+      "v1/FP16_GEMM_TensorCore_test.cu": "365bdc16bbf4a76956348035a36a4a2ae0f9340c718ebbc677f08d4d44e63ae0",
+      "v2/FP16_GEMM_TensorCore.cu": "6860383dd730c32dfce136da52f9ea8ca73a061d6616b3e298ae041c02f29ab6",
+      "v2/FP16_GEMM_TensorCore_test.cu": "07f295a4f2222d5ddadd0795eab31f8d819fc331b9ca96f6ce75a459085e087e",
+      "v3/FP16_GEMM_TensorCore.cu": "8f29a82c075be59b6521bda50a07aa042d696a2772dcb7b6ea298b8771958e75",
+      "v3/FP16_GEMM_TensorCore_test.cu": "5bbffbda4999d833ba7fdc66cb36d348bab60bee1d9a6c9b266e72cdc1a1249e",
+      "v4/FP16_GEMM_TensorCore.cu": "9fe717bf0600f0301f2e1bfff72ba5a7a1b7973e62835bf943f2c98d19c13c51",
+      "v4/FP16_GEMM_TensorCore_test.cu": "2659b59199e5a3f0dfcd4a52a3df279cad721c1e917aa0041ea69aa6768e0b14",
+      "v5/FP16_GEMM_TensorCore.cu": "3ccb054cb2dd1c9275382048bc9eae8ddc314a1a32b2bb084bb1dcaecac26f9d",
+      "v5/FP16_GEMM_TensorCore_test.cu": "ced3b6ef043f038468c2c102cc1d2c0824bfe2925a37dbe510a83b8037372e2c",
+      "v6/FP16_GEMM_TensorCore.cu": "918fbfd89a0f3173cba91534837ca853fb47fbb9bdc03b1c71314c1833c5762a",
+      "v6/FP16_GEMM_TensorCore_test.cu": "0fd7945d8c343ab21eea98401c3daa59e60ed9878ac1bf377024f491a0914951",
+      "v7/FP16_GEMM_TensorCore.cu": "f46ca193ebbf9d94f3a5ce8fd2c6d8a934000ab37f09759abee8bc60bfbc0752",
+      "v7/FP16_GEMM_TensorCore_test.cu": "34c12236f16bb58ade82c3dbc5b92dfaa84ae498e5caad927073fafcbc7f8beb",
+      "v8/FP16_GEMM_TensorCore.cu": "ee990243a04de57f862b025049a085ce8d4659955c7ddcef46d5e1edd166f842",
+      "v8/FP16_GEMM_TensorCore_test.cu": "e6f57596cb4c8711ef46e81231dd5a733d60ae3b271ffea0be551bb2ae86e9f5"
+    },
+    "commit": "0dc73d68b2eb29a771122c9e0406a731e1b88cc4"
+  },
+  "cs-roofline-toolkit": {
+    "sha256": {
+      "Empirical_Roofline_Tool-1.1.0/Drivers/driver.h": "e6ee2b6c09ceae76deb161f5c5fad997a0b8de5ed5364fa065ab3d1b58987667",
+      "Empirical_Roofline_Tool-1.1.0/Drivers/driver1.cxx": "76da96627fb781491907bf718bce7a247dea8ea3025e214eadee9ba24bc5c9e9",
+      "Empirical_Roofline_Tool-1.1.0/Kernels/kernel-tensor.h": "082406c0b670aa59d7799c18709e1a84b9265acf04ea0a5d18665d360e2e6b6b",
+      "Empirical_Roofline_Tool-1.1.0/Kernels/kernel1.c": "116341dc21e2f64d70c5f054405fc5ad15372b6dd751e0e461e5f05b95e4a851",
+      "Empirical_Roofline_Tool-1.1.0/Kernels/kernel1.cxx": "ef8e54982d37a4544ee18916a883795ca522851acff5975b2ff706768e94a558",
+      "Empirical_Roofline_Tool-1.1.0/Kernels/kernel1.h": "888599de007f77a8ca3857ac439c91fd65cb1efdf00b614912bfd14f0bf0d013",
+      "Empirical_Roofline_Tool-1.1.0/Kernels/rep.h": "aee04b1f0921226d50eb0dfe3f6f7f7b8b448f19b5b277ce0a5b00902309a4b7",
+      "Empirical_Roofline_Tool-1.1.0/Python/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "Empirical_Roofline_Tool-1.1.0/Python/ert_core.py": "3f613bbdeafe72d7e879dfe6501912b06775d91a112c5829b6b02aa4740307ba",
+      "Empirical_Roofline_Tool-1.1.0/Python/ert_utils.py": "4ddf6dd29d39a81fbc66729601052a8873d2e79af01671e9eaca3081165df28a",
+      "Empirical_Roofline_Tool-1.1.0/Scripts/maximum.py": "248b2897c1745be726f2027df707b3627e88c44425b46853bea938144f90bc64",
+      "Empirical_Roofline_Tool-1.1.0/Scripts/preprocess.py": "0fb7dbc85eebcd3c4407ce7420d4fd50c561d7a23b1162eb9e25a4a67153d75c",
+      "Empirical_Roofline_Tool-1.1.0/Scripts/roofline.py": "f44cd12311e5f202b66cb4260d370569a0391ea3a34ae6e309ecbe83ff3fbc6a",
+      "Empirical_Roofline_Tool-1.1.0/Scripts/summary.py": "caa775796693579d5fb9d287748943ff459140f3c74b428181295bd81974ff40",
+      "Empirical_Roofline_Tool-1.1.0/Scripts/util.py": "50dca7fdbbfe28acd0a1c75419cce17f4d33b588e3a5d81d1834d2861e416b76"
+    }
+  },
+  "nersc-roofline": {
+    "sha256": {
+      "ERT/Kernels/kernel1.c": "de3a3b967fa22d8b4d3aa85253381f5570b4ce662398bb8a3b73f8f6705fe51f",
+      "ERT/Kernels/kernel1.h": "2c9b7caa20cd9e282e5254cf5fda39cda378afd1b08262d3d993906ab9610b44",
+      "ERT/Kernels/kernel3.c": "3a409b03bdf1432be3d1e3249ad378cfa617e08585197b26ce67bb2660cd7e2d",
+      "ERT/Kernels/kernel3.h": "a74d94d1d4c0a761bc8f78d7f14fa60db4ca5a880901d7ee9526c362de3801b4",
+      "ERT/Kernels/rep.h": "04a56c4a1a316af719a86007e2d753f78bea14e10177773d092e2a4ac31c42b2",
+      "GPP/KNL/CustomComplex.h": "c729fa152352b4cff0defca986b80ed70c4cec5607fc60c813dee09a381d5874",
+      "GPP/KNL/parse-vtune.py": "0ad03354c8095529188a94ffe211584571b014cc751ca31909d20a96d95ce159",
+      "GPP/KNL/roofline.py": "16993fcf3bbfd2eaedbf977f915ac865e38cc35faf3360ae133b0b8275e922c2",
+      "GPP/Volta/GPUComplex.cu": "c1ce61ea58d8939b319249ad3a0bd1306ed405be26d5f6fec19031abbb900f05",
+      "GPP/Volta/GPUComplex.h": "09bb740a4c1cb15eab066843a6152ccd9e8f8bd05d7512fe6fb73fb7de875e60",
+      "Plotting/plot_roofline.py": "14ecd0509420d09bd084155032456a907c0e13dd1d3b91aee2556b3608f5cd97",
+      "Plotting/plot_roofline_hierarchical.py": "98325007183d5e71767c5837203a09407280164c72be0d1c89a81bbb8c26e389",
+      "stream-ai-example/fortran_itt_sde/api_itt_sde.c": "56ee73cbbe9eba9001fbfd7c66d02bb0870d147faa48d0179f63cfd9243b8ed9",
+      "stream-ai-example/stream_mpi.c": "ff8fccba219e23740a81f912677afa6a641f293595f3614c1d01958955d11292"
+    },
+    "commit": "65487eb44c1290f195cf2edb67cc329614aa86ae"
+  },
+  "experiment_scripts": {
+    "calibrate.cu": "f8d574d1d06dd9640829101efc18f2527c5df1ecea17f114f0437b3e2862ee43",
+    "operator_runner.cu": "dca3690fa3744d861a5a921ecfcb14e2f1923abe7b77f336b2fdc3fc42498c21",
+    "requirements.txt": "d29f9f752afd1c0b46b1e1b190e2b9914111c3987f980672bcc80646e4658c38",
+    "run_experiment.py": "bf1c0b56e069f4887beb925daf5b79d89b21f029db26388e31f3238067025d19",
+    "test_experiment.py": "b44a062cf95f86a7756b7666d712595430060afe74e02065a3fe5398b579402e"
+  },
+  "upstream_sources": {
+    "FP16_GEMM_TensorCore": {
+      "commit": "0dc73d68b2eb29a771122c9e0406a731e1b88cc4",
+      "changes": ""
+    },
+    "nersc-roofline": {
+      "commit": "65487eb44c1290f195cf2edb67cc329614aa86ae",
+      "changes": " M Plotting/plot_roofline_hierarchical.py"
+    },
+    "cs-roofline-toolkit": {
+      "commit": "09663aad764d3c6cefa4d9de1f1213b5f03af9df",
+      "source": "https://bitbucket.org/berkeleylab/cs-roofline-toolkit.git",
+      "scope": "Empirical_Roofline_Tool-1.1.0 and license files"
+    }
+  },
+  "cutlass_headers": {
+    "path": "/home/zhangshuyi/cutlass",
+    "commit": "ae6bccf341fb4410241f696ba06873023d5ce4ed"
+  },
+  "experiment_scripts_final": {
+    "calibrate.cu": "f8d574d1d06dd9640829101efc18f2527c5df1ecea17f114f0437b3e2862ee43",
+    "operator_runner.cu": "dca3690fa3744d861a5a921ecfcb14e2f1923abe7b77f336b2fdc3fc42498c21",
+    "requirements.txt": "d29f9f752afd1c0b46b1e1b190e2b9914111c3987f980672bcc80646e4658c38",
+    "run_experiment.py": "fc9a1610edb24e401c342df2b9e79abaf985dc653c76784e7b64d2c723be536b",
+    "test_experiment.py": "b44a062cf95f86a7756b7666d712595430060afe74e02065a3fe5398b579402e",
+    "upstream_sources.json": "97b5bf9ca9fb46f4b336771bbc47a8e72dc6daabf21696c0e8c4c2924f505a1b"
+  },
+  "note": "experiment_scripts records hashes at acquisition; experiment_scripts_final includes later reporting/native ERT summary and provenance updates. All GPU raw samples are from this run."
+}

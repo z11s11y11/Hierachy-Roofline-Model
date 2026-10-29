@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "-O3",
+    "-std=c++17",
+    "-arch=sm_86",
+    "-I",
+    "/home/zhangshuyi/Hierachy-Roofline-Model/scripts",
+    "/home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/v7/FP16_GEMM_TensorCore.cu",
+    "/home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu",
+    "-o",
+    "/home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v7"
+  ],
+  "cwd": "/home/zhangshuyi/Hierachy-Roofline-Model",
+  "CUDA_VISIBLE_DEVICES": "4",
+  "TMPDIR": "/home/zhangshuyi/Hierachy-Roofline-Model/.cache/ncu-tmp",
+  "timestamp": "2026-10-29T11:42:44.362585+00:00"
+}

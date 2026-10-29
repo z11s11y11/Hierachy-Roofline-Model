@@ -1,0 +1,990 @@
+{
+  "device": {
+    "name": "NVIDIA RTX A6000",
+    "sm": 86,
+    "sms": 84,
+    "memory_bytes": 50899386368,
+    "l2_bytes": 6291456,
+    "memory_bus_bits": 384,
+    "memory_clock_khz": 8001000,
+    "shared_gpu": true
+  },
+  "shape": [
+    3072,
+    3072,
+    3072
+  ],
+  "operators": [
+    {
+      "operator": "v1",
+      "M": 3072,
+      "N": 3072,
+      "K": 3072,
+      "flops": 57982058496,
+      "profile_ms": 5.099456000000001,
+      "TFLOPS": 11.370243903663448,
+      "event_ms": 9.62590694,
+      "event_TFLOPS": 6.02354239,
+      "validation": "PASS",
+      "profile_samples": [
+        {
+          "seconds": 0.0050994560000000005,
+          "L1_bytes": 16244089632.0,
+          "L2_bytes": 3147862624.0,
+          "DRAM_bytes": 1397387008.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_tensor_core_kernel(const __half *, const __half *, __half *, int, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 1397387008.0,
+                "gpu__time_duration.sum": 0.0050994560000000005,
+                "l1tex__t_sectors.sum": 16244089632.0,
+                "lts__t_sectors.sum": 3147862624.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.005074784000000001,
+          "L1_bytes": 16242896000.0,
+          "L2_bytes": 3132002240.0,
+          "DRAM_bytes": 1407334016.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_tensor_core_kernel(const __half *, const __half *, __half *, int, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 1407334016.0,
+                "gpu__time_duration.sum": 0.005074784000000001,
+                "l1tex__t_sectors.sum": 16242896000.0,
+                "lts__t_sectors.sum": 3132002240.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.005150528000000001,
+          "L1_bytes": 16243403008.0,
+          "L2_bytes": 3148414368.0,
+          "DRAM_bytes": 1390908672.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_tensor_core_kernel(const __half *, const __half *, __half *, int, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 1390908672.0,
+                "gpu__time_duration.sum": 0.005150528000000001,
+                "l1tex__t_sectors.sum": 16243403008.0,
+                "lts__t_sectors.sum": 3148414368.0
+              }
+            }
+          ]
+        }
+      ],
+      "timing_samples": [
+        {
+          "event_ms": 9.62590694,
+          "TFLOPS": 6.02354239,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 10.2643719,
+          "TFLOPS": 5.64886573,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 5.57895708,
+          "TFLOPS": 10.3929924,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        }
+      ],
+      "L1_bytes": 16244089632.0,
+      "AI_L1": 3.5694249299005594,
+      "L2_bytes": 3147862624.0,
+      "AI_L2": 18.419500919109996,
+      "DRAM_bytes": 1397387008.0,
+      "AI_DRAM": 41.49319992532806
+    },
+    {
+      "operator": "v2",
+      "M": 3072,
+      "N": 3072,
+      "K": 3072,
+      "flops": 57982058496,
+      "profile_ms": 2.01904,
+      "TFLOPS": 28.717637340518266,
+      "event_ms": 4.18990088,
+      "event_TFLOPS": 13.8385275,
+      "validation": "PASS",
+      "profile_samples": [
+        {
+          "seconds": 0.00201904,
+          "L1_bytes": 1849688064.0,
+          "L2_bytes": 1847674592.0,
+          "DRAM_bytes": 531276672.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_tensor_core_kernel(const __half *, const __half *, __half *, int, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 531276672.0,
+                "gpu__time_duration.sum": 0.00201904,
+                "l1tex__t_sectors.sum": 1849688064.0,
+                "lts__t_sectors.sum": 1847674592.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.0020152,
+          "L1_bytes": 1849688064.0,
+          "L2_bytes": 1847733152.0,
+          "DRAM_bytes": 529081472.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_tensor_core_kernel(const __half *, const __half *, __half *, int, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 529081472.0,
+                "gpu__time_duration.sum": 0.0020152,
+                "l1tex__t_sectors.sum": 1849688064.0,
+                "lts__t_sectors.sum": 1847733152.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.002030816,
+          "L1_bytes": 1849688064.0,
+          "L2_bytes": 1847641088.0,
+          "DRAM_bytes": 529075712.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_tensor_core_kernel(const __half *, const __half *, __half *, int, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 529075712.0,
+                "gpu__time_duration.sum": 0.002030816,
+                "l1tex__t_sectors.sum": 1849688064.0,
+                "lts__t_sectors.sum": 1847641088.0
+              }
+            }
+          ]
+        }
+      ],
+      "timing_samples": [
+        {
+          "event_ms": 2.12131834,
+          "TFLOPS": 27.3330303,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 4.20957088,
+          "TFLOPS": 13.7738644,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 4.18990088,
+          "TFLOPS": 13.8385275,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        }
+      ],
+      "L1_bytes": 1849688064.0,
+      "AI_L1": 31.346938775510203,
+      "L2_bytes": 1847674592.0,
+      "AI_L2": 31.38109856954725,
+      "DRAM_bytes": 531276672.0,
+      "AI_DRAM": 109.13721898935552
+    },
+    {
+      "operator": "v3",
+      "M": 3072,
+      "N": 3072,
+      "K": 3072,
+      "flops": 57982058496,
+      "profile_ms": 0.612352,
+      "TFLOPS": 94.68746488294315,
+      "event_ms": 0.615424037,
+      "event_TFLOPS": 94.2148096,
+      "validation": "PASS",
+      "profile_samples": [
+        {
+          "seconds": 0.0006176,
+          "L1_bytes": 1226833920.0,
+          "L2_bytes": 1396831296.0,
+          "DRAM_bytes": 189307776.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 189307776.0,
+                "gpu__time_duration.sum": 0.0006176,
+                "l1tex__t_sectors.sum": 1226833920.0,
+                "lts__t_sectors.sum": 1396831296.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.0006095040000000001,
+          "L1_bytes": 1226833920.0,
+          "L2_bytes": 1396832768.0,
+          "DRAM_bytes": 175444608.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 175444608.0,
+                "gpu__time_duration.sum": 0.0006095040000000001,
+                "l1tex__t_sectors.sum": 1226833920.0,
+                "lts__t_sectors.sum": 1396832768.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.000612352,
+          "L1_bytes": 1226833920.0,
+          "L2_bytes": 1396829664.0,
+          "DRAM_bytes": 186006656.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 186006656.0,
+                "gpu__time_duration.sum": 0.000612352,
+                "l1tex__t_sectors.sum": 1226833920.0,
+                "lts__t_sectors.sum": 1396829664.0
+              }
+            }
+          ]
+        }
+      ],
+      "timing_samples": [
+        {
+          "event_ms": 1.07182086,
+          "TFLOPS": 54.0967814,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.615424037,
+          "TFLOPS": 94.2148096,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.615014434,
+          "TFLOPS": 94.2775572,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        }
+      ],
+      "L1_bytes": 1226833920.0,
+      "AI_L1": 47.261538461538464,
+      "L2_bytes": 1396829664.0,
+      "AI_L2": 41.509755978378195,
+      "DRAM_bytes": 186006656.0,
+      "AI_DRAM": 311.72034239462914
+    },
+    {
+      "operator": "v4",
+      "M": 3072,
+      "N": 3072,
+      "K": 3072,
+      "flops": 57982058496,
+      "profile_ms": 0.617536,
+      "TFLOPS": 93.8925965385014,
+      "event_ms": 0.858623981,
+      "event_TFLOPS": 67.5290462,
+      "validation": "PASS",
+      "profile_samples": [
+        {
+          "seconds": 0.000616384,
+          "L1_bytes": 1000341504.0,
+          "L2_bytes": 1170687328.0,
+          "DRAM_bytes": 94596480.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 94596480.0,
+                "gpu__time_duration.sum": 0.000616384,
+                "l1tex__t_sectors.sum": 1000341504.0,
+                "lts__t_sectors.sum": 1170687328.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.000617536,
+          "L1_bytes": 1000341504.0,
+          "L2_bytes": 1170562976.0,
+          "DRAM_bytes": 94699264.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 94699264.0,
+                "gpu__time_duration.sum": 0.000617536,
+                "l1tex__t_sectors.sum": 1000341504.0,
+                "lts__t_sectors.sum": 1170562976.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.000628416,
+          "L1_bytes": 1000341504.0,
+          "L2_bytes": 1170618944.0,
+          "DRAM_bytes": 94805632.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 94805632.0,
+                "gpu__time_duration.sum": 0.000628416,
+                "l1tex__t_sectors.sum": 1000341504.0,
+                "lts__t_sectors.sum": 1170618944.0
+              }
+            }
+          ]
+        }
+      ],
+      "timing_samples": [
+        {
+          "event_ms": 1.07386887,
+          "TFLOPS": 53.9936114,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.858623981,
+          "TFLOPS": 67.5290462,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.658828795,
+          "TFLOPS": 88.0077783,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        }
+      ],
+      "L1_bytes": 1000341504.0,
+      "AI_L1": 57.9622641509434,
+      "L2_bytes": 1170562976.0,
+      "AI_L2": 49.5334806283844,
+      "DRAM_bytes": 94699264.0,
+      "AI_DRAM": 612.2757035999773
+    },
+    {
+      "operator": "v5",
+      "M": 3072,
+      "N": 3072,
+      "K": 3072,
+      "flops": 57982058496,
+      "profile_ms": 0.619392,
+      "TFLOPS": 93.61124860508369,
+      "event_ms": 0.609587193,
+      "event_TFLOPS": 95.1169237,
+      "validation": "PASS",
+      "profile_samples": [
+        {
+          "seconds": 0.000632672,
+          "L1_bytes": 1000341504.0,
+          "L2_bytes": 1170587808.0,
+          "DRAM_bytes": 96487168.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 96487168.0,
+                "gpu__time_duration.sum": 0.000632672,
+                "l1tex__t_sectors.sum": 1000341504.0,
+                "lts__t_sectors.sum": 1170587808.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.0006193920000000001,
+          "L1_bytes": 1000341504.0,
+          "L2_bytes": 1170488320.0,
+          "DRAM_bytes": 95984256.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 95984256.0,
+                "gpu__time_duration.sum": 0.0006193920000000001,
+                "l1tex__t_sectors.sum": 1000341504.0,
+                "lts__t_sectors.sum": 1170488320.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.0006192960000000001,
+          "L1_bytes": 1000341504.0,
+          "L2_bytes": 1170489888.0,
+          "DRAM_bytes": 95447424.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 95447424.0,
+                "gpu__time_duration.sum": 0.0006192960000000001,
+                "l1tex__t_sectors.sum": 1000341504.0,
+                "lts__t_sectors.sum": 1170489888.0
+              }
+            }
+          ]
+        }
+      ],
+      "timing_samples": [
+        {
+          "event_ms": 0.617369592,
+          "TFLOPS": 93.9179047,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.607231975,
+          "TFLOPS": 95.4858455,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.609587193,
+          "TFLOPS": 95.1169237,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        }
+      ],
+      "L1_bytes": 1000341504.0,
+      "AI_L1": 57.9622641509434,
+      "L2_bytes": 1170488320.0,
+      "AI_L2": 49.53663996920533,
+      "DRAM_bytes": 95984256.0,
+      "AI_DRAM": 604.0788449305686
+    },
+    {
+      "operator": "v6",
+      "M": 3072,
+      "N": 3072,
+      "K": 3072,
+      "flops": 57982058496,
+      "profile_ms": 0.559296,
+      "TFLOPS": 103.66971781668383,
+      "event_ms": 0.626425624,
+      "event_TFLOPS": 92.560164,
+      "validation": "PASS",
+      "profile_samples": [
+        {
+          "seconds": 0.0005591680000000001,
+          "L1_bytes": 792723456.0,
+          "L2_bytes": 793191392.0,
+          "DRAM_bytes": 93947392.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 93947392.0,
+                "gpu__time_duration.sum": 0.0005591680000000001,
+                "l1tex__t_sectors.sum": 792723456.0,
+                "lts__t_sectors.sum": 793191392.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.000559296,
+          "L1_bytes": 792723456.0,
+          "L2_bytes": 793142752.0,
+          "DRAM_bytes": 93970048.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 93970048.0,
+                "gpu__time_duration.sum": 0.000559296,
+                "l1tex__t_sectors.sum": 792723456.0,
+                "lts__t_sectors.sum": 793142752.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.0005648000000000001,
+          "L1_bytes": 792723456.0,
+          "L2_bytes": 793030656.0,
+          "DRAM_bytes": 94298240.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 94298240.0,
+                "gpu__time_duration.sum": 0.0005648000000000001,
+                "l1tex__t_sectors.sum": 792723456.0,
+                "lts__t_sectors.sum": 793030656.0
+              }
+            }
+          ]
+        }
+      ],
+      "timing_samples": [
+        {
+          "event_ms": 1.03219199,
+          "TFLOPS": 56.1737147,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.626425624,
+          "TFLOPS": 92.560164,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.562585592,
+          "TFLOPS": 103.063533,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        }
+      ],
+      "L1_bytes": 792723456.0,
+      "AI_L1": 73.14285714285714,
+      "L2_bytes": 793142752.0,
+      "AI_L2": 73.10419007144883,
+      "DRAM_bytes": 93970048.0,
+      "AI_DRAM": 617.0270179706623
+    },
+    {
+      "operator": "v7",
+      "M": 3072,
+      "N": 3072,
+      "K": 3072,
+      "flops": 57982058496,
+      "profile_ms": 0.55952,
+      "TFLOPS": 103.62821435516156,
+      "event_ms": 0.567808032,
+      "event_TFLOPS": 102.115601,
+      "validation": "PASS",
+      "profile_samples": [
+        {
+          "seconds": 0.000571712,
+          "L1_bytes": 792723456.0,
+          "L2_bytes": 793157120.0,
+          "DRAM_bytes": 94217216.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 94217216.0,
+                "gpu__time_duration.sum": 0.000571712,
+                "l1tex__t_sectors.sum": 792723456.0,
+                "lts__t_sectors.sum": 793157120.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.000557664,
+          "L1_bytes": 792723456.0,
+          "L2_bytes": 793307520.0,
+          "DRAM_bytes": 93964544.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 93964544.0,
+                "gpu__time_duration.sum": 0.000557664,
+                "l1tex__t_sectors.sum": 792723456.0,
+                "lts__t_sectors.sum": 793307520.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.00055952,
+          "L1_bytes": 792723456.0,
+          "L2_bytes": 793263456.0,
+          "DRAM_bytes": 94880000.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 94880000.0,
+                "gpu__time_duration.sum": 0.00055952,
+                "l1tex__t_sectors.sum": 792723456.0,
+                "lts__t_sectors.sum": 793263456.0
+              }
+            }
+          ]
+        }
+      ],
+      "timing_samples": [
+        {
+          "event_ms": 0.567808032,
+          "TFLOPS": 102.115601,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.566374421,
+          "TFLOPS": 102.374077,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.607996821,
+          "TFLOPS": 95.3657264,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        }
+      ],
+      "L1_bytes": 792723456.0,
+      "AI_L1": 73.14285714285714,
+      "L2_bytes": 793263456.0,
+      "AI_L2": 73.09306644273299,
+      "DRAM_bytes": 94880000.0,
+      "AI_DRAM": 611.1093854974705
+    },
+    {
+      "operator": "v8",
+      "M": 3072,
+      "N": 3072,
+      "K": 3072,
+      "flops": 57982058496,
+      "profile_ms": 0.568992,
+      "TFLOPS": 101.90311725999662,
+      "event_ms": 0.571699202,
+      "event_TFLOPS": 101.420569,
+      "validation": "PASS",
+      "profile_samples": [
+        {
+          "seconds": 0.0005690560000000001,
+          "L1_bytes": 641728512.0,
+          "L2_bytes": 642170336.0,
+          "DRAM_bytes": 87953664.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 87953664.0,
+                "gpu__time_duration.sum": 0.0005690560000000001,
+                "l1tex__t_sectors.sum": 641728512.0,
+                "lts__t_sectors.sum": 642170336.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.000568992,
+          "L1_bytes": 641728512.0,
+          "L2_bytes": 642174400.0,
+          "DRAM_bytes": 87224064.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 87224064.0,
+                "gpu__time_duration.sum": 0.000568992,
+                "l1tex__t_sectors.sum": 641728512.0,
+                "lts__t_sectors.sum": 642174400.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.000567392,
+          "L1_bytes": 641728512.0,
+          "L2_bytes": 642178016.0,
+          "DRAM_bytes": 87801600.0,
+          "kernels": [
+            {
+              "kernel": "<unnamed>::fp16_gemm_outer_product_sm86_wide_pipeline_kernel(const __half *, const __half *, __half *, int, int)",
+              "metrics": {
+                "dram__bytes.sum": 87801600.0,
+                "gpu__time_duration.sum": 0.000567392,
+                "l1tex__t_sectors.sum": 641728512.0,
+                "lts__t_sectors.sum": 642178016.0
+              }
+            }
+          ]
+        }
+      ],
+      "timing_samples": [
+        {
+          "event_ms": 1.03745914,
+          "TFLOPS": 55.8885228,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.571699202,
+          "TFLOPS": 101.420569,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.568934381,
+          "TFLOPS": 101.913438,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        }
+      ],
+      "L1_bytes": 641728512.0,
+      "AI_L1": 90.3529411764706,
+      "L2_bytes": 642174400.0,
+      "AI_L2": 90.29020542706157,
+      "DRAM_bytes": 87224064.0,
+      "AI_DRAM": 664.7484173174962
+    },
+    {
+      "operator": "cublas",
+      "M": 3072,
+      "N": 3072,
+      "K": 3072,
+      "flops": 57982058496,
+      "profile_ms": 0.45491200000000004,
+      "TFLOPS": 127.45774676420933,
+      "event_ms": 0.537292838,
+      "event_TFLOPS": 107.91519,
+      "validation": "PASS",
+      "profile_samples": [
+        {
+          "seconds": 0.000453248,
+          "L1_bytes": 736192512.0,
+          "L2_bytes": 737129920.0,
+          "DRAM_bytes": 142866816.0,
+          "kernels": [
+            {
+              "kernel": "ampere_h16816gemm_256x128_ldg8_stages_32x3_nn",
+              "metrics": {
+                "dram__bytes.sum": 142866816.0,
+                "gpu__time_duration.sum": 0.000453248,
+                "l1tex__t_sectors.sum": 736192512.0,
+                "lts__t_sectors.sum": 737129920.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.000454912,
+          "L1_bytes": 736192512.0,
+          "L2_bytes": 737287840.0,
+          "DRAM_bytes": 142872064.0,
+          "kernels": [
+            {
+              "kernel": "ampere_h16816gemm_256x128_ldg8_stages_32x3_nn",
+              "metrics": {
+                "dram__bytes.sum": 142872064.0,
+                "gpu__time_duration.sum": 0.000454912,
+                "l1tex__t_sectors.sum": 736192512.0,
+                "lts__t_sectors.sum": 737287840.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.00045561600000000005,
+          "L1_bytes": 736192512.0,
+          "L2_bytes": 737128576.0,
+          "DRAM_bytes": 141780352.0,
+          "kernels": [
+            {
+              "kernel": "ampere_h16816gemm_256x128_ldg8_stages_32x3_nn",
+              "metrics": {
+                "dram__bytes.sum": 141780352.0,
+                "gpu__time_duration.sum": 0.00045561600000000005,
+                "l1tex__t_sectors.sum": 736192512.0,
+                "lts__t_sectors.sum": 737128576.0
+              }
+            }
+          ]
+        }
+      ],
+      "timing_samples": [
+        {
+          "event_ms": 0.462745607,
+          "TFLOPS": 125.300073,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0057992281,
+          "relative_l2_error": 0.00194950482
+        },
+        {
+          "event_ms": 0.537292838,
+          "TFLOPS": 107.91519,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0057992281,
+          "relative_l2_error": 0.00194950482
+        },
+        {
+          "event_ms": 0.53882879,
+          "TFLOPS": 107.607573,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0057992281,
+          "relative_l2_error": 0.00194950482
+        }
+      ],
+      "L1_bytes": 736192512.0,
+      "AI_L1": 78.75937007085452,
+      "L2_bytes": 737287840.0,
+      "AI_L2": 78.64236374222583,
+      "DRAM_bytes": 142872064.0,
+      "AI_DRAM": 405.8320211290571
+    },
+    {
+      "operator": "cutlass",
+      "M": 3072,
+      "N": 3072,
+      "K": 3072,
+      "flops": 57982058496,
+      "profile_ms": 0.479008,
+      "TFLOPS": 121.04611717549604,
+      "event_ms": 0.483020782,
+      "event_TFLOPS": 120.040505,
+      "validation": "PASS",
+      "profile_samples": [
+        {
+          "seconds": 0.00048812800000000005,
+          "L1_bytes": 698351616.0,
+          "L2_bytes": 698669376.0,
+          "DRAM_bytes": 113026176.0,
+          "kernels": [
+            {
+              "kernel": "void Kernel<Gemm<MmaMultistage<GemmShape<256, 128, 32>, PredicatedTileAccessIterator<MatrixShape<256, 32>, half_t, RowMajor, 1, PitchLinearWarpRakedThreadMap<PitchLinearShape<32, 256>, 256, PitchLinearShape<4, 8>, 8>, Array<half_t, 8, 0>, 0, NoPermute>, RegularTileAccessIterator<MatrixShape<256, 32>, half_t, RowMajorTensorOpMultiplicandCrosswise<16, 32>, 0, PitchLinearWarpRakedThreadMap<PitchLinearShape<32, 256>, 256, PitchLinearShape<4, 8>, 8>, 16>, 1, PredicatedTileAccessIterator<MatrixShape<32, 128>, half_t, RowMajor, 0, PitchLinearWarpRakedThreadMap<PitchLinearShape<128, 32>, 256, PitchLinearShape<8, 4>, 8>, Array<half_t, 8, 0>, 0, NoPermute>, RegularTileAccessIterator<MatrixShape<32, 128>, half_t, RowMajorTensorOpMultiplicandCongruous<16, 64>, 0, PitchLinearWarpRakedThreadMap<PitchLinearShape<128, 32>, 256, PitchLinearShape<8, 4>, 8>, 16>, 1, half_t, RowMajor, MmaPolicy<MmaTensorOp<GemmShape<64, 64, 32>, half_t, RowMajorTensorOpMultiplicandCrosswise<16, 32>, half_t, RowMajorTensorOpMultiplicandCongruous<16, 64>, half_t, RowMajor, MmaTensorOpPolicy<Mma<GemmShape<16, 8, 16>, 32, half_t, RowMajor, half_t, ColumnMajor, half_t, RowMajor, OpMultiplyAdd>, MatrixShape<1, 1>>, 1, 0, bool>, MatrixShape<0, 0>, MatrixShape<0, 0>, 1>, 3, 0, bool>, Epilogue<GemmShape<256, 128, 32>, MmaTensorOp<GemmShape<64, 64, 32>, half_t, RowMajorTensorOpMultiplicandCrosswise<16, 32>, half_t, RowMajorTensorOpMultiplicandCongruous<16, 64>, half_t, RowMajor, MmaTensorOpPolicy<Mma<GemmShape<16, 8, 16>, 32, half_t, RowMajor, half_t, ColumnMajor, half_t, RowMajor, OpMultiplyAdd>, MatrixShape<1, 1>>, 1, 0, bool>, 1, PredicatedTileIterator<OutputTileOptimalThreadMap<OutputTileShape<128, 8, 4, 1, 1>, OutputTileShape<1, 8, 1, 1, 8>, 256, 8, 16>, half_t, 0, NoPermute, 0>, FragmentIteratorTensorOp<GemmShape<64, 64, 32>, GemmShape<16, 8, 16>, half_t, Array<half_t, 4, 0>, RowMajor>, TileIteratorTensorOp<GemmShape<64, 64, 32>, GemmShape<16, 8, 16>, half_t, RowMajor>, SharedLoadIterator<OutputTileOptimalThreadMap<OutputTileShape<128, 8, 4, 1, 1>, OutputTileShape<1, 8, 1, 1, 8>, 256, 8, 16>::CompactedThreadMap, half_t, 16>, LinearCombination<half_t, 8, half_t, half_t, 0, 2, half_t>, MatrixShape<0, 16>, 1, 1>, GemmIdentityThreadblockSwizzle<1>, 0>>(Params)",
+              "metrics": {
+                "dram__bytes.sum": 113026176.0,
+                "gpu__time_duration.sum": 0.00048812800000000005,
+                "l1tex__t_sectors.sum": 698351616.0,
+                "lts__t_sectors.sum": 698669376.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.000475744,
+          "L1_bytes": 698351616.0,
+          "L2_bytes": 698622336.0,
+          "DRAM_bytes": 112524416.0,
+          "kernels": [
+            {
+              "kernel": "void Kernel<Gemm<MmaMultistage<GemmShape<256, 128, 32>, PredicatedTileAccessIterator<MatrixShape<256, 32>, half_t, RowMajor, 1, PitchLinearWarpRakedThreadMap<PitchLinearShape<32, 256>, 256, PitchLinearShape<4, 8>, 8>, Array<half_t, 8, 0>, 0, NoPermute>, RegularTileAccessIterator<MatrixShape<256, 32>, half_t, RowMajorTensorOpMultiplicandCrosswise<16, 32>, 0, PitchLinearWarpRakedThreadMap<PitchLinearShape<32, 256>, 256, PitchLinearShape<4, 8>, 8>, 16>, 1, PredicatedTileAccessIterator<MatrixShape<32, 128>, half_t, RowMajor, 0, PitchLinearWarpRakedThreadMap<PitchLinearShape<128, 32>, 256, PitchLinearShape<8, 4>, 8>, Array<half_t, 8, 0>, 0, NoPermute>, RegularTileAccessIterator<MatrixShape<32, 128>, half_t, RowMajorTensorOpMultiplicandCongruous<16, 64>, 0, PitchLinearWarpRakedThreadMap<PitchLinearShape<128, 32>, 256, PitchLinearShape<8, 4>, 8>, 16>, 1, half_t, RowMajor, MmaPolicy<MmaTensorOp<GemmShape<64, 64, 32>, half_t, RowMajorTensorOpMultiplicandCrosswise<16, 32>, half_t, RowMajorTensorOpMultiplicandCongruous<16, 64>, half_t, RowMajor, MmaTensorOpPolicy<Mma<GemmShape<16, 8, 16>, 32, half_t, RowMajor, half_t, ColumnMajor, half_t, RowMajor, OpMultiplyAdd>, MatrixShape<1, 1>>, 1, 0, bool>, MatrixShape<0, 0>, MatrixShape<0, 0>, 1>, 3, 0, bool>, Epilogue<GemmShape<256, 128, 32>, MmaTensorOp<GemmShape<64, 64, 32>, half_t, RowMajorTensorOpMultiplicandCrosswise<16, 32>, half_t, RowMajorTensorOpMultiplicandCongruous<16, 64>, half_t, RowMajor, MmaTensorOpPolicy<Mma<GemmShape<16, 8, 16>, 32, half_t, RowMajor, half_t, ColumnMajor, half_t, RowMajor, OpMultiplyAdd>, MatrixShape<1, 1>>, 1, 0, bool>, 1, PredicatedTileIterator<OutputTileOptimalThreadMap<OutputTileShape<128, 8, 4, 1, 1>, OutputTileShape<1, 8, 1, 1, 8>, 256, 8, 16>, half_t, 0, NoPermute, 0>, FragmentIteratorTensorOp<GemmShape<64, 64, 32>, GemmShape<16, 8, 16>, half_t, Array<half_t, 4, 0>, RowMajor>, TileIteratorTensorOp<GemmShape<64, 64, 32>, GemmShape<16, 8, 16>, half_t, RowMajor>, SharedLoadIterator<OutputTileOptimalThreadMap<OutputTileShape<128, 8, 4, 1, 1>, OutputTileShape<1, 8, 1, 1, 8>, 256, 8, 16>::CompactedThreadMap, half_t, 16>, LinearCombination<half_t, 8, half_t, half_t, 0, 2, half_t>, MatrixShape<0, 16>, 1, 1>, GemmIdentityThreadblockSwizzle<1>, 0>>(Params)",
+              "metrics": {
+                "dram__bytes.sum": 112524416.0,
+                "gpu__time_duration.sum": 0.000475744,
+                "l1tex__t_sectors.sum": 698351616.0,
+                "lts__t_sectors.sum": 698622336.0
+              }
+            }
+          ]
+        },
+        {
+          "seconds": 0.000479008,
+          "L1_bytes": 698351616.0,
+          "L2_bytes": 698626784.0,
+          "DRAM_bytes": 113689088.0,
+          "kernels": [
+            {
+              "kernel": "void Kernel<Gemm<MmaMultistage<GemmShape<256, 128, 32>, PredicatedTileAccessIterator<MatrixShape<256, 32>, half_t, RowMajor, 1, PitchLinearWarpRakedThreadMap<PitchLinearShape<32, 256>, 256, PitchLinearShape<4, 8>, 8>, Array<half_t, 8, 0>, 0, NoPermute>, RegularTileAccessIterator<MatrixShape<256, 32>, half_t, RowMajorTensorOpMultiplicandCrosswise<16, 32>, 0, PitchLinearWarpRakedThreadMap<PitchLinearShape<32, 256>, 256, PitchLinearShape<4, 8>, 8>, 16>, 1, PredicatedTileAccessIterator<MatrixShape<32, 128>, half_t, RowMajor, 0, PitchLinearWarpRakedThreadMap<PitchLinearShape<128, 32>, 256, PitchLinearShape<8, 4>, 8>, Array<half_t, 8, 0>, 0, NoPermute>, RegularTileAccessIterator<MatrixShape<32, 128>, half_t, RowMajorTensorOpMultiplicandCongruous<16, 64>, 0, PitchLinearWarpRakedThreadMap<PitchLinearShape<128, 32>, 256, PitchLinearShape<8, 4>, 8>, 16>, 1, half_t, RowMajor, MmaPolicy<MmaTensorOp<GemmShape<64, 64, 32>, half_t, RowMajorTensorOpMultiplicandCrosswise<16, 32>, half_t, RowMajorTensorOpMultiplicandCongruous<16, 64>, half_t, RowMajor, MmaTensorOpPolicy<Mma<GemmShape<16, 8, 16>, 32, half_t, RowMajor, half_t, ColumnMajor, half_t, RowMajor, OpMultiplyAdd>, MatrixShape<1, 1>>, 1, 0, bool>, MatrixShape<0, 0>, MatrixShape<0, 0>, 1>, 3, 0, bool>, Epilogue<GemmShape<256, 128, 32>, MmaTensorOp<GemmShape<64, 64, 32>, half_t, RowMajorTensorOpMultiplicandCrosswise<16, 32>, half_t, RowMajorTensorOpMultiplicandCongruous<16, 64>, half_t, RowMajor, MmaTensorOpPolicy<Mma<GemmShape<16, 8, 16>, 32, half_t, RowMajor, half_t, ColumnMajor, half_t, RowMajor, OpMultiplyAdd>, MatrixShape<1, 1>>, 1, 0, bool>, 1, PredicatedTileIterator<OutputTileOptimalThreadMap<OutputTileShape<128, 8, 4, 1, 1>, OutputTileShape<1, 8, 1, 1, 8>, 256, 8, 16>, half_t, 0, NoPermute, 0>, FragmentIteratorTensorOp<GemmShape<64, 64, 32>, GemmShape<16, 8, 16>, half_t, Array<half_t, 4, 0>, RowMajor>, TileIteratorTensorOp<GemmShape<64, 64, 32>, GemmShape<16, 8, 16>, half_t, RowMajor>, SharedLoadIterator<OutputTileOptimalThreadMap<OutputTileShape<128, 8, 4, 1, 1>, OutputTileShape<1, 8, 1, 1, 8>, 256, 8, 16>::CompactedThreadMap, half_t, 16>, LinearCombination<half_t, 8, half_t, half_t, 0, 2, half_t>, MatrixShape<0, 16>, 1, 1>, GemmIdentityThreadblockSwizzle<1>, 0>>(Params)",
+              "metrics": {
+                "dram__bytes.sum": 113689088.0,
+                "gpu__time_duration.sum": 0.000479008,
+                "l1tex__t_sectors.sum": 698351616.0,
+                "lts__t_sectors.sum": 698626784.0
+              }
+            }
+          ]
+        }
+      ],
+      "timing_samples": [
+        {
+          "event_ms": 0.483020782,
+          "TFLOPS": 120.040505,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.482815981,
+          "TFLOPS": 120.091424,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        },
+        {
+          "event_ms": 0.55961597,
+          "TFLOPS": 103.610443,
+          "validation": "PASS",
+          "validation_samples": 128,
+          "max_abs_error": 0.0115883238,
+          "relative_l2_error": 0.00268802106
+        }
+      ],
+      "L1_bytes": 698351616.0,
+      "AI_L1": 83.02702702702703,
+      "L2_bytes": 698626784.0,
+      "AI_L2": 82.99432518750956,
+      "DRAM_bytes": 113689088.0,
+      "AI_DRAM": 510.00548527577246
+    }
+  ],
+  "complete": true
+}

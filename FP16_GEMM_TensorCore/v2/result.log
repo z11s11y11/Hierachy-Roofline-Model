@@ -1,0 +1,9 @@
+Compiling FP16 Tensor Core GEMM with /usr/local/cuda/bin/nvcc (sm_86)
+Running: /home/zhangshuyi/2026_07_23/v3/FP16_GEMM_TensorCore_test 2304 2688 2048 10 100
+Validation samples: 256, max abs error: 0.0101351, max relative error: 0.237738
+GPU: NVIDIA RTX A6000 (SM 8.6)
+GEMM: M=2304, N=2688, K=2048
+Accumulator: FP16
+Average time: 1.176 ms
+Performance: 21.570 TFLOPS
+Validation: PASS

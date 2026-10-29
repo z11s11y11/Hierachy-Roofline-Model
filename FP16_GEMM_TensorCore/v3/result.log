@@ -1,0 +1,24 @@
+Compiling FP16 outer-product Tensor Core GEMM
+  nvcc: /usr/local/cuda/bin/nvcc
+  arch: sm_86
+ptxas info    : 0 bytes gmem
+ptxas info    : Compiling entry function '_ZN56_GLOBAL__N__fe16931a_23_FP16_GEMM_TensorCore_cu_853917d142fp16_gemm_outer_product_tensor_core_kernelEPK6__halfS2_PS0_iii' for 'sm_86'
+ptxas info    : Function properties for _ZN56_GLOBAL__N__fe16931a_23_FP16_GEMM_TensorCore_cu_853917d142fp16_gemm_outer_product_tensor_core_kernelEPK6__halfS2_PS0_iii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, 8192 bytes smem, 388 bytes cmem[0]
+ptxas info    : Compiling entry function '_ZN56_GLOBAL__N__fe16931a_23_FP16_GEMM_TensorCore_cu_853917d144fp16_gemm_outer_product_sm86_pipeline_kernelEPK6__halfS2_PS0_ii' for 'sm_86'
+ptxas info    : Function properties for _ZN56_GLOBAL__N__fe16931a_23_FP16_GEMM_TensorCore_cu_853917d144fp16_gemm_outer_product_sm86_pipeline_kernelEPK6__halfS2_PS0_ii
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 93 registers, 41984 bytes smem, 384 bytes cmem[0]
+ptxas info    : 0 bytes gmem
+Running: /home/zhangshuyi/2026_07_23/v7/FP16_GEMM_TensorCore_test 8192 10752 8192 10 100
+Validation samples: 256, max abs error: 0.00629908, max tolerance: 0.334962
+GPU: NVIDIA RTX A6000 (SM 8.6)
+GEMM: M=8192, N=10752, K=8192
+Kernel path: SM86 skewed A/B four-stage cp.async pipeline
+Fast-kernel resources: 93 registers/thread, 41 KiB shared/CTA, 2 active CTAs/SM, 16 resident warps/SM
+Data / accumulator / output: FP16 / FP16 / FP16
+Kernel average: 18.407 ms
+Launch-to-sync average: 18.408 ms
+Performance: 78.399 TFLOPS
+Validation: PASS

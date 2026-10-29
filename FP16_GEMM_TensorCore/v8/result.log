@@ -1,0 +1,16 @@
+GPU: NVIDIA RTX A6000 (SM 8.6)
+Shape: 8064 x 10752 x 8192
+Configuration: 192x192x16 CTA, 2x2 warps, 96x96 warp tile,
+               GROUP_M=6, XOR swizzle, resident B fragments, 4-stage cp.async
+ptxas: Used 255 registers; 0 bytes spill stores; 0 bytes spill loads
+
+Validation: PASS (128 samples, max abs error 0.0323873)
+Representative run (5 warmup, 30 iterations): 11.612 ms, 122.333 TFLOPS
+
+Alternating v7/v8 runs (5 warmup, 30 iterations):
+v7: 12.710 ms, 111.771 TFLOPS
+v8: 11.952 ms, 118.854 TFLOPS
+v7: 12.548 ms, 113.210 TFLOPS
+v8: 12.063 ms, 117.757 TFLOPS
+v7: 12.737 ms, 111.529 TFLOPS
+v8: 12.059 ms, 117.801 TFLOPS

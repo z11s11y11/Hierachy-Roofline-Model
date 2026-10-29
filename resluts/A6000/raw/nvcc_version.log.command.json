@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "/usr/local/cuda-12.8/bin/nvcc",
+    "--version"
+  ],
+  "cwd": "/home/zhangshuyi/Hierachy-Roofline-Model",
+  "CUDA_VISIBLE_DEVICES": "4",
+  "TMPDIR": "/home/zhangshuyi/Hierachy-Roofline-Model/.cache/ncu-tmp",
+  "timestamp": "2026-10-29T11:38:52.462876+00:00"
+}

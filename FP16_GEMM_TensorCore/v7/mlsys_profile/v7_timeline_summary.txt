@@ -1,0 +1,7 @@
+version: v7
+kernel: fp16_gemm_outer_product_sm86_wide_pipeline_kernel
+active_timeline_ms: 10.589984
+x_axis_max_ms: 11.000000
+metrics: 7
+sampling_interval_ns: 10000
+alignment: first active sample per metric replay pass

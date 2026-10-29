@@ -1,0 +1,101 @@
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=native /home/zhangshuyi/Hierachy-Roofline-Model/scripts/calibrate.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/.cache/calibrate
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/.cache/calibrate info
+Running: nvidia-smi --id 4
+Running: /usr/local/cuda-12.8/bin/nvcc --version
+Running: /usr/local/cuda-12.8/bin/ncu --version
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate L1
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate L1
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate L1
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate L2
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate L2
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate L2
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate DRAM
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate DRAM
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate DRAM
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate tensor
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate tensor
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --launch-skip 1 --launch-count 1 /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate tensor
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/.venv/bin/python /home/zhangshuyi/Hierachy-Roofline-Model/cs-roofline-toolkit/Empirical_Roofline_Tool-1.1.0/ert --no-gnuplot /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/ert_config.txt
+Running: /usr/local/cuda-12.8/bin/ncu --version
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_86 -I /home/zhangshuyi/Hierachy-Roofline-Model/scripts /home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/v1/FP16_GEMM_TensorCore.cu /home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v1
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v1 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v1 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v1 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v1 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v1 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v1 3072 3072 3072 3 10
+v1: 11.370 TFLOP/s; correctness PASS
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_86 -I /home/zhangshuyi/Hierachy-Roofline-Model/scripts /home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/v2/FP16_GEMM_TensorCore.cu /home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v2
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v2 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v2 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v2 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v2 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v2 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v2 3072 3072 3072 3 10
+v2: 28.718 TFLOP/s; correctness PASS
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_86 -I /home/zhangshuyi/Hierachy-Roofline-Model/scripts /home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/v3/FP16_GEMM_TensorCore.cu /home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v3
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v3 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v3 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v3 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v3 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v3 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v3 3072 3072 3072 3 10
+v3: 94.687 TFLOP/s; correctness PASS
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_86 -I /home/zhangshuyi/Hierachy-Roofline-Model/scripts /home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/v4/FP16_GEMM_TensorCore.cu /home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v4
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v4 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v4 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v4 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v4 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v4 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v4 3072 3072 3072 3 10
+v4: 93.893 TFLOP/s; correctness PASS
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_86 -I /home/zhangshuyi/Hierachy-Roofline-Model/scripts /home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/v5/FP16_GEMM_TensorCore.cu /home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v5
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v5 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v5 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v5 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v5 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v5 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v5 3072 3072 3072 3 10
+v5: 93.611 TFLOP/s; correctness PASS
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_86 -I /home/zhangshuyi/Hierachy-Roofline-Model/scripts /home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/v6/FP16_GEMM_TensorCore.cu /home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v6
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v6 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v6 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v6 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v6 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v6 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v6 3072 3072 3072 3 10
+v6: 103.670 TFLOP/s; correctness PASS
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_86 -I /home/zhangshuyi/Hierachy-Roofline-Model/scripts /home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/v7/FP16_GEMM_TensorCore.cu /home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v7
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v7 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v7 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v7 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v7 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v7 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v7 3072 3072 3072 3 10
+v7: 103.628 TFLOP/s; correctness PASS
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_86 -I /home/zhangshuyi/Hierachy-Roofline-Model/scripts /home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/v8/FP16_GEMM_TensorCore.cu /home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v8
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v8 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v8 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v8 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v8 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v8 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v8 3072 3072 3072 3 10
+v8: 101.903 TFLOP/s; correctness PASS
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_86 -I /home/zhangshuyi/Hierachy-Roofline-Model/scripts /home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/cublas/FP16_GEMM_TensorCore.cu /home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cublas -lcublas
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cublas 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cublas 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cublas 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cublas 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cublas 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cublas 3072 3072 3072 3 10
+cublas: 127.458 TFLOP/s; correctness PASS
+Running: /usr/local/cuda-12.8/bin/nvcc -O3 -std=c++17 -arch=sm_86 -I /home/zhangshuyi/Hierachy-Roofline-Model/scripts /home/zhangshuyi/Hierachy-Roofline-Model/FP16_GEMM_TensorCore/cutlass/FP16_GEMM_TensorCore.cu /home/zhangshuyi/Hierachy-Roofline-Model/scripts/operator_runner.cu -o /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cutlass --expt-relaxed-constexpr -I /home/zhangshuyi/cutlass/include
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cutlass 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cutlass 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cutlass 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cutlass 3072 3072 3072 3 10
+Running: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cutlass 3072 3072 3072 3 10
+Running: /usr/local/cuda-12.8/bin/ncu --csv --clock-control none --cache-control all --metrics gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum --nvtx --nvtx-include roofline/ /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cutlass 3072 3072 3072 3 10
+cutlass: 121.046 TFLOP/s; correctness PASS
+Saved /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/roofline.png / .svg / .pdf
+Results: /home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000

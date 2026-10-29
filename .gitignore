@@ -1,0 +1,12 @@
+.venv/
+.cache/
+__pycache__/
+*.pyc
+resluts/**/build/
+resluts/**/ert/Run.*/**/*.o
+resluts/**/ert/Run.*/**/driver1.kernel1
+resluts/**/ert/**/driver1.kernel1
+resluts/**/ert/**/*.o
+FP16_GEMM_TensorCore/**/FP16_GEMM_TensorCore_test
+FP16_GEMM_TensorCore/**/FP16_GEMM_TensorCore_profile_once
+

@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "/usr/local/cuda-12.8/bin/ncu",
+    "--csv",
+    "--clock-control",
+    "none",
+    "--cache-control",
+    "all",
+    "--metrics",
+    "gpu__time_duration.sum,l1tex__t_sectors.sum,lts__t_sectors.sum,dram__bytes.sum",
+    "--nvtx",
+    "--nvtx-include",
+    "roofline/",
+    "/home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/v4",
+    "3072",
+    "3072",
+    "3072",
+    "3",
+    "10"
+  ],
+  "cwd": "/home/zhangshuyi/Hierachy-Roofline-Model",
+  "CUDA_VISIBLE_DEVICES": "4",
+  "TMPDIR": "/home/zhangshuyi/Hierachy-Roofline-Model/.cache/ncu-tmp",
+  "timestamp": "2026-10-29T11:41:44.390665+00:00"
+}

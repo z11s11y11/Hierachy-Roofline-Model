@@ -1,0 +1,7 @@
+version: cublas
+kernel: ampere_h16816gemm_256x128_ldg8_stages_32x3_nn
+active_timeline_ms: 9.169984
+x_axis_max_ms: 10.000000
+metrics: 7
+sampling_interval_ns: 10000
+alignment: first active sample per replay pass group

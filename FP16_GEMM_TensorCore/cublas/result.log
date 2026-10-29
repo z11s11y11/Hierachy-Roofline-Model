@@ -1,0 +1,6 @@
+Validation: PASS (128 samples, max abs error 0.0323873)
+GPU: NVIDIA RTX A6000
+Kernel: cuBLAS FP16 Tensor Core GEMM (FP16 accumulation)
+Shape: 8064 x 10752 x 8192
+Time: 11.446 ms
+Performance: 124.112 TFLOPS

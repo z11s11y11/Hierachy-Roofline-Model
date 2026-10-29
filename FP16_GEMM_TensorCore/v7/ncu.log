@@ -1,0 +1,130 @@
+Nsight Compute profile: v20 current swizzle kernel
+==================================================
+
+Date: 2026-07-25 (Asia/Shanghai)
+GPU: NVIDIA RTX A6000 (GA102, SM 8.6)
+Nsight Compute: 2025.1.0
+Kernel: fp16_gemm_outer_product_sm86_wide_pipeline_kernel
+Kernel path: 128x192 compact XOR-swizzled ldmatrix/mma.sync pipeline
+Problem: M=8064, N=10752, K=8192
+Launch: grid=(56,63,1), block=(256,1,1)
+Selection: skip 1 warm-up launch, profile 1 timed launch
+Replay passes: 3
+NCU kernel duration: 13.35 ms
+
+Collected metrics
+-----------------
+
+L2 hit rate:
+  lts__t_sector_hit_rate.pct
+  82.64 %
+
+DRAM read traffic:
+  dram__bytes_read.sum
+  3.27 Gbyte
+
+DRAM read throughput:
+  dram__bytes_read.sum.per_second
+  244.99 Gbyte/s
+
+Long-scoreboard stall rate:
+  smsp__warp_issue_stalled_long_scoreboard_per_warp_active.pct
+  2.63 %
+
+Long-scoreboard accumulated warp latency:
+  smsp__average_warp_latency_issue_stalled_long_scoreboard.ratio
+  23269.64 inst/warp
+
+Tensor Core HMMA pipeline rate, normalized to kernel elapsed cycles:
+  sm__pipe_tensor_op_hmma_cycles_active.avg.pct_of_peak_sustained_elapsed
+  87.92 %
+
+Tensor Core HMMA pipeline rate, normalized to SM active cycles:
+  sm__pipe_tensor_op_hmma_cycles_active.avg.pct_of_peak_sustained_active
+  88.55 %
+
+Notes
+-----
+
+- The 87.92% elapsed-cycle value is the primary whole-kernel HMMA pipeline
+  utilization.  The 88.55% active-cycle value excludes periods when the SM is
+  inactive.
+- Long-scoreboard stalls occupy 2.63% of active-warp cycles, so this profile
+  does not indicate a dominant long-latency memory-dependency bottleneck.
+- The test program's profiler-injected wall time is not meaningful because NCU
+  replays and serializes the launch.  Use gpu__time_duration.sum (13.35 ms).
+
+Raw report
+----------
+
+.ncu/reports/v20_swizzle_l2_dram_scoreboard_hmma.ncu-rep
+
+Command
+-------
+
+bash ncu_personal.sh --force-overwrite \
+  --export .ncu/reports/v20_swizzle_l2_dram_scoreboard_hmma \
+  --target-processes all --launch-skip 1 --launch-count 1 \
+  --metrics gpu__time_duration.sum,lts__t_sector_hit_rate.pct,dram__bytes_read.sum,dram__bytes_read.sum.per_second,smsp__warp_issue_stalled_long_scoreboard_per_warp_active.pct,smsp__average_warp_latency_issue_stalled_long_scoreboard.ratio,sm__pipe_tensor_op_hmma_cycles_active.avg.pct_of_peak_sustained_elapsed,sm__pipe_tensor_op_hmma_cycles_active.avg.pct_of_peak_sustained_active \
+  ./v20/FP16_GEMM_TensorCore_test 8064 10752 8192 1 1
+
+
+Nsight Compute profile: v21 selected resource-balance kernel
+============================================================
+
+Date: 2026-07-25 (Asia/Shanghai)
+GPU: NVIDIA RTX A6000 (GA102, SM 8.6)
+Compiler for profiled binary: CUDA 12.8
+Kernel: fp16_gemm_outer_product_sm86_wide_pipeline_kernel
+Kernel path: 128x192, 8 warps/CTA, fully resident B fragments,
+             compact XOR-swizzled shared layout, GROUP_M=6
+Problem: M=8064, N=10752, K=8192
+Launch: grid=(56,63,1), block=(256,1,1)
+Resources: 124 registers/thread (128 allocated), 40 KiB application shared/CTA,
+           1 KiB driver shared/CTA, 2 CTAs/SM, 16 warps/SM
+NCU kernel duration: 13.10 ms
+
+Collected metrics
+-----------------
+
+L2 hit rate:
+  lts__t_sector_hit_rate.pct
+  87.59 %
+
+DRAM read traffic:
+  dram__bytes_read.sum
+  2.34 Gbyte
+
+DRAM read throughput:
+  dram__bytes_read.sum.per_second
+  178.48 Gbyte/s
+
+Long-scoreboard stall rate:
+  smsp__warp_issue_stalled_long_scoreboard_per_warp_active.pct
+  2.43 %
+
+Long-scoreboard accumulated warp latency:
+  smsp__average_warp_latency_issue_stalled_long_scoreboard.ratio
+  21220.72 inst/warp
+
+Tensor Core HMMA pipeline rate, normalized to kernel elapsed cycles:
+  sm__pipe_tensor_op_hmma_cycles_active.avg.pct_of_peak_sustained_elapsed
+  89.57 %
+
+Tensor Core HMMA pipeline rate, normalized to SM active cycles:
+  sm__pipe_tensor_op_hmma_cycles_active.avg.pct_of_peak_sustained_active
+  90.11 %
+
+Raw report
+----------
+
+.ncu/reports/v21_final_resource_balance.ncu-rep
+
+Command
+-------
+
+bash ncu_personal.sh --force-overwrite \
+  --export .ncu/reports/v21_final_resource_balance \
+  --target-processes all --launch-skip 1 --launch-count 1 \
+  --metrics gpu__time_duration.sum,lts__t_sector_hit_rate.pct,dram__bytes_read.sum,dram__bytes_read.sum.per_second,smsp__warp_issue_stalled_long_scoreboard_per_warp_active.pct,smsp__average_warp_latency_issue_stalled_long_scoreboard.ratio,sm__pipe_tensor_op_hmma_cycles_active.avg.pct_of_peak_sustained_elapsed,sm__pipe_tensor_op_hmma_cycles_active.avg.pct_of_peak_sustained_active \
+  /tmp/v21_final_cuda128 8064 10752 8192 1 1

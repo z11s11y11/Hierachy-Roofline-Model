@@ -1,0 +1,9 @@
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 2769136 (/home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/cublas)
+{"event_ms":0.56094718,"TFLOPS":103.36456,"validation":"PASS","validation_samples":128,"max_abs_error":0.0057992281,"relative_l2_error":0.00194950482}
+==PROF== Disconnected from process 2769136
+"ID","Process ID","Process Name","Host Name","thread Domain:Push/Pop_Range:PL_Type:PL_Value:CLR_Type:Color:Msg_Type:Msg","Id:Domain:Start/Stop_Range:PL_Type:PL_Value:CLR_Type:Color:Msg_Type:Msg","Kernel Name","Context","Stream","Block Size","Grid Size","Device","CC","Section Name","Metric Name","Metric Unit","Metric Value"
+"0","2769136","cublas","127.0.0.1","2769136  ""<default domain>:roofline:none:none:none:none:none:none"" ","","ampere_h16816gemm_256x128_ldg8_stages_32x3_nn","1","7","(256, 1, 1)","(12, 24, 2)","0","8.6","Command line profiler metrics","dram__bytes.sum","byte","141780352"
+"0","2769136","cublas","127.0.0.1","2769136  ""<default domain>:roofline:none:none:none:none:none:none"" ","","ampere_h16816gemm_256x128_ldg8_stages_32x3_nn","1","7","(256, 1, 1)","(12, 24, 2)","0","8.6","Command line profiler metrics","gpu__time_duration.sum","ns","455616"
+"0","2769136","cublas","127.0.0.1","2769136  ""<default domain>:roofline:none:none:none:none:none:none"" ","","ampere_h16816gemm_256x128_ldg8_stages_32x3_nn","1","7","(256, 1, 1)","(12, 24, 2)","0","8.6","Command line profiler metrics","l1tex__t_sectors.sum","sector","23006016"
+"0","2769136","cublas","127.0.0.1","2769136  ""<default domain>:roofline:none:none:none:none:none:none"" ","","ampere_h16816gemm_256x128_ldg8_stages_32x3_nn","1","7","(256, 1, 1)","(12, 24, 2)","0","8.6","Command line profiler metrics","lts__t_sectors.sum","sector","23035268"
