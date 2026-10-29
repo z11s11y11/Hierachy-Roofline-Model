@@ -1,4 +1,10 @@
 # methods
+# 准备：拉取代码
+@todo 在目录下面拉取三个代码仓库
+git clone https://bitbucket.org/berkeleylab/cs-roofline-toolkit.git
+git clone https://github.com/z11s11y11/FP16_GEMM_TensorCore.git
+git clone https://github.com/cyanguwa/nersc-roofline.git
+
 # 第一步：Empirical Roofline Toolkit 
 
 文献paper reference\Hierarchical Roofline analysis\Hierarchical Roofline analysis.pdf中提到ERT
