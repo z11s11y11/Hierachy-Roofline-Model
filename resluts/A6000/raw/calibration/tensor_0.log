@@ -1,0 +1,9 @@
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 529996 (/home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/build/calibrate)
+{"mode":"tensor","working_set_bytes":0,"repeats":1000,"logical_bytes":0,"flops":176160768000,"event_ms":2037.81262,"validation":"PASS"}
+==PROF== Disconnected from process 529996
+"ID","Process ID","Process Name","Host Name","Kernel Name","Context","Stream","Block Size","Grid Size","Device","CC","Section Name","Metric Name","Metric Unit","Metric Value"
+"0","529996","calibrate","127.0.0.1","tensor_peak(__half *, int)","1","7","(256, 1, 1)","(336, 1, 1)","0","8.6","Command line profiler metrics","dram__bytes.sum","byte","9535744"
+"0","529996","calibrate","127.0.0.1","tensor_peak(__half *, int)","1","7","(256, 1, 1)","(336, 1, 1)","0","8.6","Command line profiler metrics","gpu__time_duration.sum","ns","1106592"
+"0","529996","calibrate","127.0.0.1","tensor_peak(__half *, int)","1","7","(256, 1, 1)","(336, 1, 1)","0","8.6","Command line profiler metrics","l1tex__t_sectors.sum","sector","688128"
+"0","529996","calibrate","127.0.0.1","tensor_peak(__half *, int)","1","7","(256, 1, 1)","(336, 1, 1)","0","8.6","Command line profiler metrics","lts__t_sectors.sum","sector","374263"

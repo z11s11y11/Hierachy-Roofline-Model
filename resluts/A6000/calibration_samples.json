@@ -1,0 +1,322 @@
+{
+  "L1": [
+    {
+      "seconds": 0.000156128,
+      "L1_bytes": 1410662400.0,
+      "L2_bytes": 2915520.0,
+      "DRAM_bytes": 1503104.0,
+      "kernels": [
+        {
+          "kernel": "void read_bandwidth<1>(const float4 *, float4 *, unsigned long, int)",
+          "metrics": {
+            "dram__bytes.sum": 1503104.0,
+            "gpu__time_duration.sum": 0.000156128,
+            "l1tex__t_sectors.sum": 1410662400.0,
+            "lts__t_sectors.sum": 2915520.0
+          }
+        }
+      ],
+      "mode": "L1",
+      "working_set_bytes": 1376256,
+      "repeats": 1024,
+      "logical_bytes": 1409286144,
+      "flops": 0,
+      "event_ms": 2024.08618,
+      "validation": "PASS",
+      "GBps": 9035.29411764706,
+      "TFLOPS": 0.0
+    },
+    {
+      "seconds": 0.000156768,
+      "L1_bytes": 1410662400.0,
+      "L2_bytes": 3025472.0,
+      "DRAM_bytes": 1578496.0,
+      "kernels": [
+        {
+          "kernel": "void read_bandwidth<1>(const float4 *, float4 *, unsigned long, int)",
+          "metrics": {
+            "dram__bytes.sum": 1578496.0,
+            "gpu__time_duration.sum": 0.000156768,
+            "l1tex__t_sectors.sum": 1410662400.0,
+            "lts__t_sectors.sum": 3025472.0
+          }
+        }
+      ],
+      "mode": "L1",
+      "working_set_bytes": 1376256,
+      "repeats": 1024,
+      "logical_bytes": 1409286144,
+      "flops": 0,
+      "event_ms": 1996.20581,
+      "validation": "PASS",
+      "GBps": 8998.407838334353,
+      "TFLOPS": 0.0
+    },
+    {
+      "seconds": 0.00015740800000000002,
+      "L1_bytes": 1410662400.0,
+      "L2_bytes": 3023232.0,
+      "DRAM_bytes": 2349056.0,
+      "kernels": [
+        {
+          "kernel": "void read_bandwidth<1>(const float4 *, float4 *, unsigned long, int)",
+          "metrics": {
+            "dram__bytes.sum": 2349056.0,
+            "gpu__time_duration.sum": 0.00015740800000000002,
+            "l1tex__t_sectors.sum": 1410662400.0,
+            "lts__t_sectors.sum": 3023232.0
+          }
+        }
+      ],
+      "mode": "L1",
+      "working_set_bytes": 1376256,
+      "repeats": 1024,
+      "logical_bytes": 1409286144,
+      "flops": 0,
+      "event_ms": 2038.46497,
+      "validation": "PASS",
+      "GBps": 8961.821508436673,
+      "TFLOPS": 0.0
+    }
+  ],
+  "L2": [
+    {
+      "seconds": 0.000169056,
+      "L1_bytes": 404029440.0,
+      "L2_bytes": 404185696.0,
+      "DRAM_bytes": 3859712.0,
+      "kernels": [
+        {
+          "kernel": "void read_bandwidth<0>(const float4 *, float4 *, unsigned long, int)",
+          "metrics": {
+            "dram__bytes.sum": 3859712.0,
+            "gpu__time_duration.sum": 0.000169056,
+            "l1tex__t_sectors.sum": 404029440.0,
+            "lts__t_sectors.sum": 404185696.0
+          }
+        }
+      ],
+      "mode": "L2",
+      "working_set_bytes": 3145728,
+      "repeats": 128,
+      "logical_bytes": 402653184,
+      "flops": 0,
+      "event_ms": 1629.01355,
+      "validation": "PASS",
+      "GBps": 2390.8391065682376,
+      "TFLOPS": 0.0
+    },
+    {
+      "seconds": 0.000168992,
+      "L1_bytes": 404029440.0,
+      "L2_bytes": 404185568.0,
+      "DRAM_bytes": 3842560.0,
+      "kernels": [
+        {
+          "kernel": "void read_bandwidth<0>(const float4 *, float4 *, unsigned long, int)",
+          "metrics": {
+            "dram__bytes.sum": 3842560.0,
+            "gpu__time_duration.sum": 0.000168992,
+            "l1tex__t_sectors.sum": 404029440.0,
+            "lts__t_sectors.sum": 404185568.0
+          }
+        }
+      ],
+      "mode": "L2",
+      "working_set_bytes": 3145728,
+      "repeats": 128,
+      "logical_bytes": 402653184,
+      "flops": 0,
+      "event_ms": 1561.54675,
+      "validation": "PASS",
+      "GBps": 2391.7437985230067,
+      "TFLOPS": 0.0
+    },
+    {
+      "seconds": 0.000175424,
+      "L1_bytes": 404029440.0,
+      "L2_bytes": 404190656.0,
+      "DRAM_bytes": 3853952.0,
+      "kernels": [
+        {
+          "kernel": "void read_bandwidth<0>(const float4 *, float4 *, unsigned long, int)",
+          "metrics": {
+            "dram__bytes.sum": 3853952.0,
+            "gpu__time_duration.sum": 0.000175424,
+            "l1tex__t_sectors.sum": 404029440.0,
+            "lts__t_sectors.sum": 404190656.0
+          }
+        }
+      ],
+      "mode": "L2",
+      "working_set_bytes": 3145728,
+      "repeats": 128,
+      "logical_bytes": 402653184,
+      "flops": 0,
+      "event_ms": 1592.32727,
+      "validation": "PASS",
+      "GBps": 2304.0784385260854,
+      "TFLOPS": 0.0
+    }
+  ],
+  "DRAM": [
+    {
+      "seconds": 0.0011391040000000002,
+      "L1_bytes": 806682624.0,
+      "L2_bytes": 806854592.0,
+      "DRAM_bytes": 807769856.0,
+      "kernels": [
+        {
+          "kernel": "void read_bandwidth<0>(const float4 *, float4 *, unsigned long, int)",
+          "metrics": {
+            "dram__bytes.sum": 807769856.0,
+            "gpu__time_duration.sum": 0.0011391040000000002,
+            "l1tex__t_sectors.sum": 806682624.0,
+            "lts__t_sectors.sum": 806854592.0
+          }
+        }
+      ],
+      "mode": "DRAM",
+      "working_set_bytes": 100663296,
+      "repeats": 8,
+      "logical_bytes": 805306368,
+      "flops": 0,
+      "event_ms": 1587.65344,
+      "validation": "PASS",
+      "GBps": 709.1273983762676,
+      "TFLOPS": 0.0
+    },
+    {
+      "seconds": 0.0011378240000000002,
+      "L1_bytes": 806682624.0,
+      "L2_bytes": 806898432.0,
+      "DRAM_bytes": 807831040.0,
+      "kernels": [
+        {
+          "kernel": "void read_bandwidth<0>(const float4 *, float4 *, unsigned long, int)",
+          "metrics": {
+            "dram__bytes.sum": 807831040.0,
+            "gpu__time_duration.sum": 0.0011378240000000002,
+            "l1tex__t_sectors.sum": 806682624.0,
+            "lts__t_sectors.sum": 806898432.0
+          }
+        }
+      ],
+      "mode": "DRAM",
+      "working_set_bytes": 100663296,
+      "repeats": 8,
+      "logical_bytes": 805306368,
+      "flops": 0,
+      "event_ms": 1699.76355,
+      "validation": "PASS",
+      "GBps": 709.9789071068986,
+      "TFLOPS": 0.0
+    },
+    {
+      "seconds": 0.0011394880000000001,
+      "L1_bytes": 806682624.0,
+      "L2_bytes": 806963712.0,
+      "DRAM_bytes": 807223936.0,
+      "kernels": [
+        {
+          "kernel": "void read_bandwidth<0>(const float4 *, float4 *, unsigned long, int)",
+          "metrics": {
+            "dram__bytes.sum": 807223936.0,
+            "gpu__time_duration.sum": 0.0011394880000000001,
+            "l1tex__t_sectors.sum": 806682624.0,
+            "lts__t_sectors.sum": 806963712.0
+          }
+        }
+      ],
+      "mode": "DRAM",
+      "working_set_bytes": 100663296,
+      "repeats": 8,
+      "logical_bytes": 805306368,
+      "flops": 0,
+      "event_ms": 2083.47534,
+      "validation": "PASS",
+      "GBps": 708.4093347187509,
+      "TFLOPS": 0.0
+    }
+  ],
+  "tensor": [
+    {
+      "seconds": 0.001106592,
+      "L1_bytes": 22020096.0,
+      "L2_bytes": 11976416.0,
+      "DRAM_bytes": 9535744.0,
+      "kernels": [
+        {
+          "kernel": "tensor_peak(__half *, int)",
+          "metrics": {
+            "dram__bytes.sum": 9535744.0,
+            "gpu__time_duration.sum": 0.001106592,
+            "l1tex__t_sectors.sum": 22020096.0,
+            "lts__t_sectors.sum": 11976416.0
+          }
+        }
+      ],
+      "mode": "tensor",
+      "working_set_bytes": 0,
+      "repeats": 1000,
+      "logical_bytes": 0,
+      "flops": 176160768000,
+      "event_ms": 2037.81262,
+      "validation": "PASS",
+      "GBps": 0.0,
+      "TFLOPS": 159.19215754315954
+    },
+    {
+      "seconds": 0.00110672,
+      "L1_bytes": 22020096.0,
+      "L2_bytes": 12122688.0,
+      "DRAM_bytes": 9356672.0,
+      "kernels": [
+        {
+          "kernel": "tensor_peak(__half *, int)",
+          "metrics": {
+            "dram__bytes.sum": 9356672.0,
+            "gpu__time_duration.sum": 0.00110672,
+            "l1tex__t_sectors.sum": 22020096.0,
+            "lts__t_sectors.sum": 12122688.0
+          }
+        }
+      ],
+      "mode": "tensor",
+      "working_set_bytes": 0,
+      "repeats": 1000,
+      "logical_bytes": 0,
+      "flops": 176160768000,
+      "event_ms": 2022.14612,
+      "validation": "PASS",
+      "GBps": 0.0,
+      "TFLOPS": 159.17374584357378
+    },
+    {
+      "seconds": 0.0011067520000000001,
+      "L1_bytes": 22020096.0,
+      "L2_bytes": 11958496.0,
+      "DRAM_bytes": 9363200.0,
+      "kernels": [
+        {
+          "kernel": "tensor_peak(__half *, int)",
+          "metrics": {
+            "dram__bytes.sum": 9363200.0,
+            "gpu__time_duration.sum": 0.0011067520000000001,
+            "l1tex__t_sectors.sum": 22020096.0,
+            "lts__t_sectors.sum": 11958496.0
+          }
+        }
+      ],
+      "mode": "tensor",
+      "working_set_bytes": 0,
+      "repeats": 1000,
+      "logical_bytes": 0,
+      "flops": 176160768000,
+      "event_ms": 2058.5647,
+      "validation": "PASS",
+      "GBps": 0.0,
+      "TFLOPS": 159.16914358410915
+    }
+  ]
+}

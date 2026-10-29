@@ -1,0 +1,18 @@
+   381.02 FP32 GFLOPs
+
+  12666.01 Weight
+
+  3048.19 DRAM
+
+META_DATA
+  FLOPS          1
+  GPU_BLOCKS     84
+  GPU_THREADS    256
+  ERT_VERSION  1.1.0
+  HOSTNAME  ('ais1-G5500-V6', [], ['127.0.1.1'])
+  UNAME  uname_result(system='Linux', node='ais1-G5500-V6', release='6.8.0-136-generic', version='#136-Ubuntu SMP PREEMPT_DYNAMIC Wed Jul  1 21:53:05 UTC 2026', machine='x86_64')
+  TIMESTAMP_DATA  1793260718.8875136
+  CONFIG  {'ERT_RESULTS': ['/home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/ert/20261029T075835127076Z'], 'ERT_DRIVER': ['driver1'], 'ERT_KERNEL': ['kernel1'], 'ERT_GPU': ['True'], 'ERT_GPU_CFLAGS': ['-x', 'cu', '-arch=sm_86'], 'ERT_GPU_LDFLAGS': [], 'ERT_FLOPS': ['1,2,64,1024'], 'ERT_ALIGN': ['32'], 'ERT_CC': ['/usr/local/cuda-12.8/bin/nvcc'], 'ERT_CFLAGS': ['-O3', '-std=c++17'], 'ERT_LD': ['/usr/local/cuda-12.8/bin/nvcc'], 'ERT_LDFLAGS': [], 'ERT_LDLIBS': [], 'ERT_RUN': ['ERT_CODE'], 'ERT_PRECISION': ['FP32'], 'ERT_BLOCKS_THREADS': ['21504,86016'], 'ERT_GPU_BLOCKS': ['84,336'], 'ERT_GPU_THREADS': ['256'], 'ERT_NUM_EXPERIMENTS': ['3'], 'ERT_MEMORY_MAX': ['67108864'], 'ERT_WORKING_SET_MIN': ['8192'], 'ERT_WSS_MULT': ['2.0'], 'ERT_TRIALS_MIN': ['1'], 'ERT_GNUPLOT': ['gnuplot'], 'ERT_MPI': [False], 'ERT_OPENMP': [False], 'ERT_HIP': [False], 'ERT_OCL': [False], 'ERT_SYCL': [False]}
+  TIMESTAMP_DATA  1793260719.3391287
+  TIMESTAMP_DATA  1793260719.7820332
+   

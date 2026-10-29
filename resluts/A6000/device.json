@@ -1,0 +1,9 @@
+{
+  "name": "NVIDIA RTX A6000",
+  "sm": 86,
+  "sms": 84,
+  "memory_bytes": 50899386368,
+  "l2_bytes": 6291456,
+  "memory_bus_bits": 384,
+  "memory_clock_khz": 8001000
+}

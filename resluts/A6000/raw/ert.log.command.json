@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/home/zhangshuyi/Hierachy-Roofline-Model/.venv/bin/python",
+    "/home/zhangshuyi/Hierachy-Roofline-Model/cs-roofline-toolkit/Empirical_Roofline_Tool-1.1.0/ert",
+    "--no-gnuplot",
+    "/home/zhangshuyi/Hierachy-Roofline-Model/resluts/A6000/ert_config.txt"
+  ],
+  "cwd": "/home/zhangshuyi/Hierachy-Roofline-Model",
+  "CUDA_VISIBLE_DEVICES": "0",
+  "TMPDIR": "/home/zhangshuyi/Hierachy-Roofline-Model/.cache/ncu-tmp",
+  "timestamp": "2026-10-29T07:58:35.127480+00:00"
+}

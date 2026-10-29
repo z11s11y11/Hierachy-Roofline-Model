@@ -1,0 +1,14 @@
+{
+  "FP16_GEMM_TensorCore": {
+    "commit": "0dc73d68b2eb29a771122c9e0406a731e1b88cc4",
+    "local_changes": ""
+  },
+  "cs-roofline-toolkit": {
+    "commit": "09663aad764d3c6cefa4d9de1f1213b5f03af9df",
+    "local_changes": ""
+  },
+  "nersc-roofline": {
+    "commit": "65487eb44c1290f195cf2edb67cc329614aa86ae",
+    "local_changes": "M Plotting/plot_roofline_hierarchical.py\n?? Plotting/__pycache__/"
+  }
+}

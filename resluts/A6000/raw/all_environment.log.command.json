@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "nvidia-smi"
+  ],
+  "cwd": "/home/zhangshuyi/Hierachy-Roofline-Model",
+  "CUDA_VISIBLE_DEVICES": "0",
+  "TMPDIR": "/home/zhangshuyi/Hierachy-Roofline-Model/.cache/ncu-tmp",
+  "timestamp": "2026-10-29T07:57:37.420701+00:00"
+}

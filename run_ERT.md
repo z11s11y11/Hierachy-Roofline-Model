@@ -1,0 +1,35 @@
+# ERT 与 GPU 屋顶校准
+
+在仓库根目录执行，Linux 环境需要 CUDA Toolkit、Nsight Compute 和 Python 3。默认优先使用 PATH 或 `/usr/local/cuda*/bin/` 中的工具，也可通过 `NVCC` / `NCU` 或 `--nvcc` / `--ncu` 指定。
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r scripts/requirements.txt
+.venv/bin/python scripts/run_experiment.py ert --device 0
+```
+
+`--device` 为一张物理 GPU 的 ID 或 UUID；也可设置 `CUDA_VISIBLE_DEVICES`。程序通过 CUDA 查询真实型号和 SM 架构，A6000 输出至 `resluts/A6000/`，H100 输出至 `resluts/H100/`。自定义目录使用 `--output resluts/my_run`；对应 Markdown 报告会生成在 `resluts/my_run.md`。
+
+本步骤实际编译、运行 `cs-roofline-toolkit/Empirical_Roofline_Tool-1.1.0/ert` 的 `driver1` / `kernel1`，并执行上游 Python 后处理，生成原生 `roofline.json`。生成的完整配置在 `ert_config.txt`，命令记录在 `raw/ert.log.command.json`。默认参数如下：
+
+- FP32，FLOP/element = 1、2、64、1024。
+- GPU blocks = SM 数和 4 倍 SM 数，threads/block = 256。
+- 最大工作集 64 MiB，从 8192 个 FP32 元素开始，每次翻倍。
+- 每种配置重复 3 次；可用 `--repeats 5 --ert-memory-mib 256` 增加采样。
+
+每次执行创建新的 ERT 原始运行目录，不复用旧测量。`ert_samples.csv` 汇总工作集、重复访问次数、时间、logical bytes 和 FLOP；`ert/<时间>/Run.001/` 保留原始 `try.*`、后处理文件和原生 `roofline.json`。
+
+不能把 ERT 标量 FP32 算力当作 FP16 Tensor Core 上限，也不能直接把 ERT logical read/write bandwidth 当作 L1 带宽。因此脚本另编译 `scripts/calibrate.cu`，补充实测：
+
+| 校准 | 工作集 / 指令 | 屋顶计算方式 |
+|---|---|---|
+| L1TEX | 每 CTA 4 KiB，重复 `.ca` 读取 | `l1tex__t_sectors.sum * 32 / seconds` |
+| L2 | 一半 L2 容量，重复 `.cg` 读取，绕过 L1 | `lts__t_sectors.sum * 32 / seconds` |
+| DRAM | max(64 MiB, 16 × L2)，`.cg` 完整扫描 | `dram__bytes.sum / seconds` |
+| FP16 Tensor Core | 每 warp 8 个独立 WMMA FP16 累加器 | `warps * 8 * repeats * 8192 / seconds` |
+
+`seconds` 来自同一 profile 的 `gpu__time_duration.sum`；GB/s 使用十进制 10⁹，TFLOP/s 使用 10¹²。校准在 profiler 的首次 replay 前清缓存，统计整个 kernel，包含冷启动开销。读探针校验所有输出，Tensor 探针校验所有输出元素；Tensor 输入和迭代数确保期望值在 FP16 下可精确表示。各屋顶取 3 次实测的最大值，完整样本保存在 `calibration_samples.json` 和 `hardware.json`。
+
+运行不会调整 GPU 时钟；ncu 使用 `--clock-control none --cache-control all`。当前测量发生在共享机器，报告中的实测上限是该环境的观察值；更稳定的机器峰值需要在空闲 GPU 上重跑。本脚本使用仓库内 `.cache/ncu-tmp` 避免共享 `/tmp` 的锁文件权限冲突。若 ncu 报性能计数器权限不足，需由管理员配置允许访问后重跑，程序会保存错误日志并退出，不生成替代测量。
+
+然后执行 [算子测试与绘图](run_operator.md)。

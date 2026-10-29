@@ -1,0 +1,8 @@
+.venv/
+.cache/
+__pycache__/
+*.pyc
+resluts/**/build/
+resluts/**/ert/Run.*/**/*.o
+resluts/**/ert/Run.*/**/driver1.kernel1
+
