@@ -40,7 +40,7 @@ https://github.com/cyanguwa/nersc-roofline 里面的画图方法，相关代码�
 
 @todo agent你需要稍微修改一下这个代码，画出roofline model的图片，将第二步和第一步得到的结果都画出来，图片保存在Hierachy-Roofline-Model\resluts中
 
-@todo agent，在第一步中我们通过微机准测试测得了FP32和Tensor Core算力，以及HBM和L1,L2缓存的带宽，通过阅读白皮书，我们是可以知道A6000上的理论FP32和Tensor Core算力，以及HBM带宽的，在画出来的图片中也需要体现出理论的数值（如用虚线表示）
+@todo agent，在第一步中我们通过微机准测试测得了FP32和Tensor Core算力，以及HBM和L1,L2缓存的带宽，通过阅读白皮书paper reference\nvidia-ampere-whitepaper\nvidia-ampere-whitepaper.pdf，我们是可以知道A6000上的理论FP32和Tensor Core算力，以及HBM带宽的，在画出来的图片中也需要体现出理论的数值（如用虚线表示）
 
 # 提醒
 如果是第一次下载git，需要用Remove-Item -Recurse -Force将git删除，再上传github
