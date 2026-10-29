@@ -28,11 +28,11 @@ ERT（Empirical Roofline Toolkit） 是一个基于 MPI、OpenMP 和 CUDA 的开
 
 # 第二步：算子测试
 
-https://github.com/z11s11y11/FP16_GEMM_TensorCore.git这是需要测试的GPU 矩阵乘法算子代码
+https://github.com/z11s11y11/FP16_GEMM_TensorCore.git这是需要测试的GPU 矩阵乘法算子代码，矩阵乘的大小取三种不同的值：200~1000左右的NMK,3000~4000左右的MNK，8000~10000左右的MNK
 
 已经下载到了文件夹中，目录为Hierachy-Roofline-Model\FP16_GEMM_TensorCore
 
-@todo agent你需要将这个代码文件运行起来，获得文件夹里面十个算子的不同层级的计算访存比，并将运行的脚本写入Hierachy-Roofline-Model\run_operator.md中。结合第一步，应该能得到这10个矩阵乘法算子在L1,L2和HBM的计算访存比以及算力，将得到的参数保存在resluts文件夹中
+@todo agent你需要将这个代码文件运行起来，获得文件夹里面十个算子的不同层级的计算访存比，并将运行的脚本写入Hierachy-Roofline-Model\run_operator.md中。结合第一步，应该能得到这10个矩阵乘法算子在L1,L2和HBM的计算访存比以及算力，将得到的参数保存在resluts文件夹中。其中一个文件名叫做operator.tsv，第一列是算子名字，第二列是L1计算访存比，第三列是L2计算访存比，第四列是HBM计算访存比，第五列是算力。
 
 # 第三步：画图
 参考Example Scripts for Plotting Roofline. [Online]. Available:
